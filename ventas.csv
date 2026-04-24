@@ -1,0 +1,8 @@
+fecha,producto,categoria,precio,cantidad,ciudad
+2025-01-01,Laptop,Tecnologia,2500,2,Bogota
+2025-01-02,Mouse,Tecnologia,50,5,Medellin
+2025-01-03,Teclado,Tecnologia,100,3,Cali
+2025-01-04,Silla,Hogar,300,1,Bogota
+2025-01-05,Escritorio,Hogar,800,2,Medellin
+2025-01-06,Laptop,Tecnologia,2500,1,Cali
+2025-01-07,Mouse,Tecnologia,50,10,Bogota
