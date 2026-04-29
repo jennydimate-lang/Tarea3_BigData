@@ -3,7 +3,7 @@ from pyspark.sql.functions import col, sum, avg
 
 spark = SparkSession.builder.appName("AnalisisBatchVentas").getOrCreate()
 
-df = spark.read.csv("data/ventas.csv", header=True, inferSchema=True)
+df = spark.read.csv("hdfs:///Tarea3/ventas.csv", header=True, inferSchema=True)
 print("=== Datos originales ===")
 df.show()
 
