@@ -1,9 +1,10 @@
-from pyspark.sql import SparkSession
+#Importamos librerias necesarias
+from pyspark.sql import SparkSession, functions as F
 from pyspark.sql.functions import col, sum, avg
+# Inicializa la sesión de Spark
+spark = SparkSession.builder.appName("Ventas").getOrCreate()
 
-spark = SparkSession.builder.appName("AnalisisBatchVentas").getOrCreate()
-
-df = spark.read.csv("hdfs:///Tarea3/ventas.csv", header=True, inferSchema=True)
+df = spark.read.csv('hdfs://localhost:9000/Tarea3/ventas.csv', header=True, inf>
 print("=== Datos originales ===")
 df.show()
 
@@ -28,3 +29,4 @@ print("=== Top productos ===")
 top_productos.show()
 
 spark.stop()
+
